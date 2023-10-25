@@ -16,7 +16,8 @@ module cl(output wire out, input wire a, b, input wire [1:0] S); //output e inpu
   or puerta_or(salida_puerta_or, a, b);
   xor puerta_xor(salida_puerta_xor, a, b);
   not puerta_not(salida_puerta_not, a);
-  mux4_1 mux(out, salida_puerta_and, salida_puerta_or, salida_puerta_xor, salida_puerta_not, S);
+  mux4a1 mux(out, salida_puerta_and, salida_puerta_or, salida_puerta_xor, salida_puerta_not, S);
+  
 endmodule
 
 /** Otra forma de hacer ---> hacer la celda logica pero usando reg.

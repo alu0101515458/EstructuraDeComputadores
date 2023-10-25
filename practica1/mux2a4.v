@@ -2,7 +2,7 @@
 module mux2_4(output wire [3:0] Out, input wire [3:0] A, input wire [3:0] B, input wire s);
 
   // Esta puede ser una opción.
-  // Si aplicamos esta opción tendriamos que  camnbiar la salida Out de wire a reg
+  // Si aplicamos esta opción tendriamos que cambiar la salida Out de wire a reg
   // para poder almacenar los valores de Out
 
   /*always @(A, B, s)  // Cuando es un multiplexor, sabemos que las salidas van a cambiar, por eso --> always

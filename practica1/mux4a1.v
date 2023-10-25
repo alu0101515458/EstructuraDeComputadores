@@ -1,5 +1,5 @@
  //Multiplexor de 4 entradas de un bit
-module mux4_1(output reg out, input wire a, b, c, d, input wire [1:0] S); // Primero salida--> out
+module mux4a1(output reg out, input wire a, b, c, d, input wire [1:0] S); // Primero salida--> out
 
   always @(a, b,c, d,S)   // Bloque always donde se colocan todas las variables que sabemos que van a variar
     begin                
